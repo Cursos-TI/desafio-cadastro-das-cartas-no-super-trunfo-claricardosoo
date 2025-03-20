@@ -7,12 +7,14 @@ char codigo[20];
 char cidade[50];
 int populacao, turismo;
 float area, pib;
+float densidadepopulacional, pibdecapita;
 
 char estado2[10];
 char codigo2[20];
 char cidade2[50];
 int populacao2, turismo2;
 float area2, pib2;
+float densidadepopulacional2, pibdecapita2;
 
 
 printf ("................\n");
@@ -43,6 +45,14 @@ scanf ("%f", &pib);
 printf ("Pontos turisticos: \n");
 scanf ("%d", &turismo);
 
+printf ("Densidade Populacional: \n");
+scanf ("%f", &densidadepopulacional);
+
+printf ("PIB de capita: \n");
+scanf ("%f", &pibdecapita);
+
+densidadepopulacional = (float)(populacao / area);
+
 printf ("Cadastre a segunda carta. \n\n");
 printf ("Segunda carta \n\n");
 printf ("Estado: \n");
@@ -66,6 +76,14 @@ scanf ("%f", &pib2);
 printf ("Pontos turisticos: \n");
 scanf ("%d", &turismo2);
 
+rintf ("Densidade Populacional: \n");
+scanf ("%f", &densidadepopulacional2);
+
+printf ("PIB de capita: \n");
+scanf ("%f", &pibdecapita2);
+
+densidadepopulacional = (float)(populacao / area);
+
 printf("\n\nCartas cadastradas com sucesso!\n\n");
 
 printf ("Primeira carta\n\n");
@@ -76,6 +94,8 @@ printf ("Populacao: %d \n", populacao);
 printf ("Area(km²): %f \n", area);
 printf ("PIB: %f \n", pib);
 printf ("Pontos turisticos: %d \n", turismo);
+printf ("Densidade Populacional: %f \n", densidadepopulacional);
+printf ("PIB de capita: %f \n", pibdecapita);
 
 printf ("Segunda carta\n\n");
 printf ("Estado: %s \n", estado2);
@@ -85,6 +105,8 @@ printf ("Populacao: %d \n", populacao2);
 printf ("Area(km²): %f \n", area2);
 printf ("PIB: %f \n", pib2);
 printf ("Pontos turisticos: %d \n", turismo2);
+printf ("Densidade Populacional: %f \n", densidadepopulacional2);
+printf ("PIB de capita: %f \n", pibdecapita2);
 
 printf ("Bom jogo e boa sorte");
 
